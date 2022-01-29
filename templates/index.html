@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+        <title>Homework 4</title>
+    </head>
+    <body>
+        <h3>Benny's favorite movies are:</h3>
+        <ol type="1">
+            {% for i in range(0, length)%}
+                {% if movies[i]  in fav%}
+                    <li id ="favorite">{{movies[i]}}</li>
+                {%else%}
+                    <li>{{movies[i]}}</li>
+                {%endif%}
+                <br>
+                <div>
+                <img alt ="Movie image" src="{{url_for('static', filename = pic[i])}} " align ="right">
+                </div>
+                <br>
+
+            {%endfor%}
+        </ol>
+
+    </body>
+</html>

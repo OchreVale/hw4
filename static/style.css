@@ -1,0 +1,14 @@
+body{
+    background-color: #e3f2fd;
+    font-family: "Arial";
+}
+ol{
+    font-size: 36;
+}
+#favorite{
+    color:green;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
